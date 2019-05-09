@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+<!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <p class="mb-0">E-Commerce</p>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -39,6 +39,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-3">
+        <!-- Seccion bloque buscar  -->
         <section class="buscar">
           <form action="#" id="bloque-buscar" class="col-12">
             <div class="contenedor-bloque-buscar">
@@ -47,6 +48,7 @@
             </div>
           </form>
         </section>
+        <!-- seccion con listado de categorias -->
         <aside class="d-none d-lg-block">
           <h3>Categorias</h3>
           <ul class="list-group">
@@ -63,6 +65,7 @@
         </aside>
       </div>
       <div class="col-12 col-lg-9">
+        <!-- Carrusel de imagenes de las camisetas -->
         <section class="carrusel">
           <div class="container">
             <div class="row">
@@ -95,6 +98,7 @@
             </div>
           </div>
         </section>
+        <!-- Seccion con listado de camisetas -->
         <section class="camisetas">
           <div class="container">
             <div class="row">
@@ -105,7 +109,9 @@
                   <h5 class="card-title">Hipster Ultimate</h5>
                   <p class="card-text">La camiseta ideal para hipsters.</p>
                   <a href="#" class="btn btn-primary btn-sm">$229<i class="fas fa-shopping-cart"></i></a>
-                  <a href="#" class="btn btn-outline-secondary btn-sm">Detalles</a>
+                  <!-- boton para abrir modal con detalles de la camiseta -->
+                  <a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal"
+                    data-target="#detailsModal">Detalles</a>
                 </div>
               </div>
               <div class="card col-sm-6 col-md-4" style="width: 18rem;">
@@ -152,6 +158,97 @@
           </div>
 
         </section>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal con detalles de la camiseta  -->
+  <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- titulo del modal -->
+          <h5 class="modal-title" id="ModalLabel">Hipster Ultimate</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- bloque de alertas sobre estado de la camiseta -->
+              <div class="col-12">
+                <div class="alert alert-info" role="alert">
+                  <i class="fas fa-exclamation-circle">Este producto esta agotado</i>
+                </div>
+              </div>
+              <!-- bloque con imagen de camiseta y detalles  -->
+              <div class="col-12">
+                <div class="row modal-camisa">
+                  <div class="col-6">
+                    <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg"
+                      class="card-img-top" alt="...">
+                  </div>
+                  <div class="col-6">
+                    <span>Precio: <strong>299</strong></span>
+                    <span>Calificación: <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                    <p class="badge badge-pill badge-warning">Hipster</p>
+                    <p class="badge badge-pill badge-secondary">Deportiva</p>
+                    <i class="fas fa-heart text-primary"> Agregar a los deseos</i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <!-- bloque con descripcion y comentarios de la camiseta -->
+                <ul class="nav nav-tabs" id="tabDescription" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab"
+                      aria-controls="description" aria-selected="true">Descripcion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="comment-tab" data-toggle="tab" href="#comment" role="tab"
+                      aria-controls="comment" aria-selected="false">Comentarios</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="tabDescriptionContent">
+                  <!-- descripcion de la camiseta -->
+                  <div class="tab-pane fade show active" id="description" role="tabpanel"
+                    aria-labelledby="description-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                    doloremque delectus officia voluptatem illum! In eum aliquam doloremque consequatur, natus sit
+                    dolorem hic temporibus placeat iure quia cumque a illo?
+                  </div>
+                  <!-- lista de comentarios -->
+                  <div class="tab-pane fade" id="comment" role="tabpanel" aria-labelledby="comment-tab">
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Germar Escobar</h5>
+                          <small>hace 2 dias</small>
+                        </div>
+                        <p class="mb-1">Esta camiseta esta increible, la quiero!</p>
+                      </div>
+                      <div class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Javier Andres</h5>
+                          <small>hace 1 semana</small>
+                        </div>
+                        <p class="mb-1">Esta camiseta esta increible, la quiero!</p>
+                      </div>
+                    </div>
+                    <textarea rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Comprar</button>
+        </div>
       </div>
     </div>
   </div>

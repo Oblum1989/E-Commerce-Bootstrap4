@@ -40,7 +40,23 @@
     max-width: 80%;
     margin-bottom: 1.5rem;
 }
+/*modal*/
+.modal-camisa{
+    margin: 1rem 0;
+}
 
+.modal-camisa img{
+    width: 90%;
+    border: 1px solid #e4dcdc;
+}
+.modal-camisa span{
+    display: block;
+    margin-bottom: 10px;
+}
+.tab-content textarea{
+    width: 100%;
+    margin-top: 0.8rem;
+}
 
 @media (min-width: 768px) { 
     

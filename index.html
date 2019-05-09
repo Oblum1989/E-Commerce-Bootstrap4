@@ -36,106 +36,125 @@
     </div>
   </nav>
 
-  <section class="buscar">
-    <div class="container">
-      <form action="#" id="bloque-buscar">
-        <div class="contenedor-bloque-buscar">
-          <input type="text" placeholder="Buscar Camisetas">
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </div>
-      </form>
-    </div>
-  </section>
-  <section class="carrusel">
-    <div class="container">
-      <div class="row">
-        <div>
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-1.jpg"
-                  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-2.jpg"
-                  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-3.jpg"
-                  class="d-block w-100" alt="...">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <section class="buscar">
+          <form action="#" id="bloque-buscar" class="col-12">
+            <div class="contenedor-bloque-buscar">
+              <input type="text" placeholder="Buscar Camisetas">
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </form>
+        </section>
+        <aside class="d-none d-lg-block">
+          <h3>Categorias</h3>
+          <ul class="list-group">
+            <li class="list-group-item"><span>Todos</span> <span class="cant">100</span></li>
+            <li class="list-group-item"><span>Hombre</span> <span class="cant">4</span></li>
+            <li class="list-group-item"><span>Mujer</span> <span class="cant">12</span></li>
+            <li class="list-group-item"><span>Hipster</span> <span class="cant">24</span></li>
+            <li class="list-group-item"><span>Metal</span> <span class="cant">0</span></li>
+            <li class="list-group-item"><span>Universidad</span> <span class="cant">8</span></li>
+            <li class="list-group-item"><span>Deporte</span> <span class="cant">0</span></li>
+            <li class="list-group-item"><span>Rayas</span> <span class="cant">12</span></li>
+            <li class="list-group-item"><span>Apretada</span> <span class="cant">10</span></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="col-12 col-lg-9">
+        <section class="carrusel">
+          <div class="container">
+            <div class="row">
+              <div>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-1.jpg"
+                        class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-2.jpg"
+                        class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-3.jpg"
+                        class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
-        </div>
+        </section>
+        <section class="camisetas">
+          <div class="container">
+            <div class="row">
+              <div class="card col-sm-6 col-md-4" style="width: 18rem;">
+                <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" class="card-img-top"
+                  alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hipster Ultimate</h5>
+                  <p class="card-text">La camiseta ideal para hipsters.</p>
+                  <a href="#" class="btn btn-primary btn-sm">$229<i class="fas fa-shopping-cart"></i></a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Detalles</a>
+                </div>
+              </div>
+              <div class="card col-sm-6 col-md-4" style="width: 18rem;">
+                <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg" class="card-img-top"
+                  alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">On Motion Live</h5>
+                  <p class="card-text">Perfecta para salidas rocosas.</p>
+                  <a href="#" class="btn btn-primary btn-sm">$229<i class="fas fa-shopping-cart"></i></a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Detalles</a>
+                </div>
+              </div>
+              <div class="card col-sm-6 col-md-4" style="width: 18rem;">
+                <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg" class="card-img-top"
+                  alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">On Motion Live</h5>
+                  <p class="card-text">Perfecta para salidas rocosas.</p>
+                  <a href="#" class="btn btn-primary btn-sm">$229<i class="fas fa-shopping-cart"></i></a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Detalles</a>
+                </div>
+              </div>
+              <div class="card col-sm-6 col-md-4" style="width: 18rem;">
+                <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-4.jpg" class="card-img-top"
+                  alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">On Motion Live</h5>
+                  <p class="card-text">Perfecta para salidas rocosas.</p>
+                  <a href="#" class="btn btn-primary btn-sm">$229<i class="fas fa-shopping-cart"></i></a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Detalles</a>
+                </div>
+              </div>
+              <div class="card col-sm-6 col-md-4" style="width: 18rem;">
+                <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-5.jpg" class="card-img-top"
+                  alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">On Motion Live</h5>
+                  <p class="card-text">Perfecta para salidas rocosas.</p>
+                  <a href="#" class="btn btn-primary btn-sm">$229<i class="fas fa-shopping-cart"></i></a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
       </div>
     </div>
-  </section>
-  <section class="camisetas">
-    <div class="container">
-      <div class="row">
-        <div class="card col-sm-5" style="width: 18rem;">
-          <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" class="card-img-top"
-            alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Hipster Ultimate</h5>
-            <p class="card-text">La camiseta ideal para hipsters.</p>
-            <a href="#" class="btn btn-primary btn-sm">$229<i class="fas fa-shopping-cart"></i></a>
-            <a href="#" class="btn btn-outline-secondary btn-sm">Detalles</a>
-          </div>
-        </div>
-        <div class="card col-sm-5" style="width: 18rem;">
-          <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg" class="card-img-top"
-            alt="...">
-          <div class="card-body">
-            <h5 class="card-title">On Motion Live</h5>
-            <p class="card-text">Perfecta para salidas rocosas.</p>
-            <a href="#" class="btn btn-primary btn-sm">$229<i class="fas fa-shopping-cart"></i></a>
-            <a href="#" class="btn btn-outline-secondary btn-sm">Detalles</a>
-          </div>
-        </div>
-        <div class="card col-sm-5" style="width: 18rem;">
-          <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg" class="card-img-top"
-            alt="...">
-          <div class="card-body">
-            <h5 class="card-title">On Motion Live</h5>
-            <p class="card-text">Perfecta para salidas rocosas.</p>
-            <a href="#" class="btn btn-primary btn-sm">$229<i class="fas fa-shopping-cart"></i></a>
-            <a href="#" class="btn btn-outline-secondary btn-sm">Detalles</a>
-          </div>
-        </div>
-        <div class="card col-sm-5" style="width: 18rem;">
-          <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-4.jpg" class="card-img-top"
-            alt="...">
-          <div class="card-body">
-            <h5 class="card-title">On Motion Live</h5>
-            <p class="card-text">Perfecta para salidas rocosas.</p>
-            <a href="#" class="btn btn-primary btn-sm">$229<i class="fas fa-shopping-cart"></i></a>
-            <a href="#" class="btn btn-outline-secondary btn-sm">Detalles</a>
-          </div>
-        </div>
-        <div class="card col-sm-5" style="width: 18rem;">
-          <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-5.jpg" class="card-img-top"
-            alt="...">
-          <div class="card-body">
-            <h5 class="card-title">On Motion Live</h5>
-            <p class="card-text">Perfecta para salidas rocosas.</p>
-            <a href="#" class="btn btn-primary btn-sm">$229<i class="fas fa-shopping-cart"></i></a>
-            <a href="#" class="btn btn-outline-secondary btn-sm">Detalles</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
+  </div>
 
   <!-- js boostrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

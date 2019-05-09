@@ -17,15 +17,23 @@
 .contenedor-bloque-buscar input[type="submit"] {
     flex: 1 1 100%;
 }
+.buscar{
+    display: contents;
+}
+.buscar .row {
+    margin: 1.5rem 0rem;
+}
+#bloque-buscar {
+    padding: 0px;
+}
 /* seccion carrusel */
 .carrusel .row {
-    margin: 1.5rem 0 1.5rem 0;
+    margin: 1.5rem 0rem;
 }
 
 /* seccion camisetas */
 .camisetas .row {
-    justify-content: space-between;
-    margin: 1.5rem 0 1.5rem 0;
+    justify-content: space-around;
 }
 .camisetas .card {
     flex-basis: 46%;
@@ -44,10 +52,46 @@
         flex-direction: row-reverse;   
         margin-right: 4rem;
     }
+
+    /*camisetas*/
+    .camisetas .card {
+        max-width: 30%;
+    }
+    .card-body {
+        padding: 1.1rem;
+    }
  }
 
 
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+    .buscar {
+        display: block;
+        height: 5rem;
+        margin-top: 1.4rem;
+    }
+    .contenedor-bloque-buscar {
+        margin-top: 0rem;
+        width: 14rem;
+    }
+    .contenedor-bloque-buscar input[type="text"] {
+        width: 0rem;
+    }
+    
+    .list-group li{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cant{
+        background-color: grey;
+        border-radius: 11px;
+        padding: 0.5px 7px;
+        color: white;
+    }
 
+ }
 
-@media (min-width: 1200px) { }
+ @media (min-width: 1200px) { 
+    .contenedor-bloque-buscar {
+        width: 17rem;
+    } 
+}
